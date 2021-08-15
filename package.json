@@ -1,6 +1,7 @@
 {
   "name": "dev-portfolio",
   "version": "0.1.0",
+  "homepage": "https://naveen-viswanathan.github.io/portfolio-react-styled",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -13,6 +14,7 @@
     "@types/react-icons": "^3.0.0",
     "@types/react-router-dom": "^5.1.8",
     "@types/react-scroll": "^1.8.3",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
@@ -27,7 +29,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
