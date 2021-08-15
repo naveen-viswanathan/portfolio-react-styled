@@ -2,6 +2,8 @@ import {
   MobileIcon,
   Nav,
   NavBarContainer,
+  NavBtn,
+  NavBtnLink,
   NavItem,
   NavLinks,
   NavLogo,
@@ -32,6 +34,9 @@ const NavBar = () => {
               <NavLinks to="signup">Sign Up</NavLinks>
             </NavItem>
           </NavMenu>
+          <NavBtn>
+            <NavBtnLink to="/signin">Sign In</NavBtnLink>
+          </NavBtn>
         </NavBarContainer>
       </Nav>
     </>
