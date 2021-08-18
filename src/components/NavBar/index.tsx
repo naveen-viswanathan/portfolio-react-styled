@@ -4,6 +4,7 @@ import {
   NavBarContainer,
   NavBtn,
   NavBtnLink,
+  NaveenLogo,
   NavItem,
   NavLinks,
   NavLogo,
@@ -11,13 +12,14 @@ import {
 } from "./NavBarElements";
 import { FaBars } from "react-icons/fa";
 
-const NavBar = () => {
+
+const NavBar = ({toggle}: {toggle: () => void}) => {
   return (
     <>
       <Nav>
         <NavBarContainer>
-          <NavLogo to="/">Naveen</NavLogo>
-          <MobileIcon>
+          <NavLogo to="/"><NaveenLogo/></NavLogo>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link as LinkRoute } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
+import { ReactComponent as Logo } from '../images/naveen_logo.svg';
 
 export const Nav = styled.nav`
   background: #161515;
@@ -82,6 +83,11 @@ export const NavLinks = styled(LinkScroll)`
   &.active {
     border-bottom: 3px solid #01bf71;
   }
+
+  &:hover {
+    border-bottom: 5px solid #01bf71;
+  }
+
 `;
 
 export const NavBtn = styled.nav`
@@ -108,7 +114,16 @@ export const NavBtnLink = styled(LinkRoute)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    color: #fff;
-    background: #010606;
+    color: #000000;
+    background: #ffffff;
+  }
+`;
+
+export const NaveenLogo = styled(Logo)`
+  max-height: 60px;
+  max-width: 60px;
+
+  &:hover {
+    filter: saturate(0);
   }
 `;
