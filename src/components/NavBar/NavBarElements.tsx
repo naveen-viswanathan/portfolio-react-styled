@@ -6,6 +6,7 @@ import { ReactComponent as Logo } from '../images/naveen_logo.svg';
 export const Nav = styled.nav`
   background: #161515;
   height: 80px;
+  /* margin-top: -80px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +100,7 @@ export const NavBtn = styled.nav`
   }
 `;
 
-export const NavBtnLink = styled(LinkRoute)`
+export const NavBtnLink = styled(LinkScroll)`
   border-radius: 50px;
   background: #01bf71;
   white-space: nowrap;

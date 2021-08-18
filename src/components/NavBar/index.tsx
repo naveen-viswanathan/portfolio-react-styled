@@ -24,20 +24,17 @@ const NavBar = ({toggle}: {toggle: () => void}) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks to="about" smooth duration={1000}>About Myself</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="discover">Discover</NavLinks>
+              <NavLinks to="skills" smooth duration={1000}>Skills</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="services">Services</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="signup">Sign Up</NavLinks>
+              <NavLinks to="projects" smooth duration={1000}>Projects</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/signin">Sign In</NavBtnLink>
+            <NavBtnLink to="contact" smooth duration={1000}>Contact Me</NavBtnLink>
           </NavBtn>
         </NavBarContainer>
       </Nav>

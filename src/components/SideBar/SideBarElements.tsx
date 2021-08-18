@@ -70,7 +70,7 @@ export const SideBtnWrap = styled.div`
   justify-content: center;
 `;
 
-export const SideBarRoute = styled(LinkRoute)`
+export const SideBarRoute = styled(LinkScroll )`
   border-radius: 50px;
   background: #01bf71;
   white-space: nowrap;

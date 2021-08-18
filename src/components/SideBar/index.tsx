@@ -19,13 +19,12 @@ const SideBar = ({isOpen, toggle}: {isOpen: boolean, toggle: () => void}) => {
       </Icon>
       <SideBarWrapper>
         <SideBarMenu>
-          <SideBarLink to="about">About</SideBarLink>
-          <SideBarLink to="discover">Discover</SideBarLink>
-          <SideBarLink to="services">Services</SideBarLink>
-          <SideBarLink to="signup">Signup</SideBarLink>
+          <SideBarLink to="about" onClick={toggle}>About Myself</SideBarLink>
+          <SideBarLink to="skills" onClick={toggle}>Skills</SideBarLink>
+          <SideBarLink to="projects" onClick={toggle}>Projects</SideBarLink>
         </SideBarMenu>
         <SideBtnWrap>
-          <SideBarRoute to="/signin">Sign In</SideBarRoute>
+          <SideBarRoute to="contact" onClick={toggle}>Contact Me</SideBarRoute>
         </SideBtnWrap>
       </SideBarWrapper>
     </SidebarContainer>
