@@ -1,5 +1,5 @@
 import { HeroContainer, HeroBg, VideoBg, ArrowForward, ArrowRight, HeroBtnWrapper, HeroContent, HeroH1, HeroP } from './HeroElements'
-import video from '../videos/video.mp4';
+import video from '../videos/video_2.mp4';
 import { useState } from 'react';
 import { Button } from '../Elements/ButtonElements';
  
@@ -11,7 +11,7 @@ const HeroSection = () => {
         setHover(!hover);
     }
     return (
-        <HeroContainer>
+        <HeroContainer id="hero">
             <HeroBg>
                 <VideoBg autoPlay loop muted>
                     <source src={video} type='video/mp4'></source>
@@ -21,7 +21,7 @@ const HeroSection = () => {
                 <HeroH1>Naveen Viswanathan</HeroH1>
                 <HeroP>Front-End Web Developer</HeroP>
             </HeroContent>
-            <HeroBtnWrapper>
+            <HeroBtnWrapper style={{display: 'none'}}>
                 <Button to="signup" 
                 onMouseEnter={onHover} 
                 onMouseLeave={onHover}>

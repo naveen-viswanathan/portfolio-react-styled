@@ -4,6 +4,7 @@ import { Link as LinkScroll } from "react-scroll";
 import { ReactComponent as Logo } from '../images/naveen_logo.svg';
 
 export const Nav = styled.nav`
+  /* background: #161515; */
   background: #161515;
   height: 80px;
   /* margin-top: -80px; */
@@ -30,7 +31,7 @@ export const NavBarContainer = styled.div`
   max-width: 1100px;
 `;
 
-export const NavLogo = styled(LinkRoute)`
+export const NavLogo = styled(LinkScroll)`
   justify-self: flex-start;
   cursor: pointer;
   font-size: 2rem;

@@ -18,7 +18,7 @@ const NavBar = ({toggle}: {toggle: () => void}) => {
     <>
       <Nav>
         <NavBarContainer>
-          <NavLogo to="/"><NaveenLogo/></NavLogo>
+          <NavLogo to="hero" smooth duration={750} offset={-80}><NaveenLogo/></NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
